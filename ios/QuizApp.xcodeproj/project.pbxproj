@@ -20,6 +20,8 @@
 		A80A8F4A4FFD6842D79C5EFC /* libPods-QuizApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D76106F83614A3C802FF9C9 /* libPods-QuizApp-tvOSTests.a */; };
 		CB5367C099653D9FFF0FED20 /* libPods-QuizApp-QuizAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC927C37454EE8ED71284F5 /* libPods-QuizApp-QuizAppTests.a */; };
 		DA90350218371543F2F6744A /* libPods-QuizApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D7C9E8EC2024BD5999EDA4 /* libPods-QuizApp-tvOS.a */; };
+		876F3DC6474A4F3B8835249D /* Roboto Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F71DD49D30843269BFD6148 /* Roboto Bold.ttf */; };
+		9952C1BEF47E4009A5A25DD4 /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D65274B5C794244B5134973 /* Roboto.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		FA07F0A6AAE101C0D4AD9999 /* Pods-QuizApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-QuizApp-tvOSTests/Pods-QuizApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FA3CE8148D62AF75A6E5185D /* libPods-QuizApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QuizApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA8BA6CA51CD4C56D08286E /* Pods-QuizApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizApp.release.xcconfig"; path = "Target Support Files/Pods-QuizApp/Pods-QuizApp.release.xcconfig"; sourceTree = "<group>"; };
+		7F71DD49D30843269BFD6148 /* Roboto Bold.ttf */ = {isa = PBXFileReference; name = "Roboto Bold.ttf"; path = "../assets/fonts/Roboto Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8D65274B5C794244B5134973 /* Roboto.ttf */ = {isa = PBXFileReference; name = "Roboto.ttf"; path = "../assets/fonts/Roboto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				EE992C8809FD5953CD9B3EEE /* Pods */,
+				05FD6C31D26B413FAFFBB764 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -198,6 +203,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		05FD6C31D26B413FAFFBB764 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				7F71DD49D30843269BFD6148 /* Roboto Bold.ttf */,
+				8D65274B5C794244B5134973 /* Roboto.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,11 +221,9 @@
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "QuizAppTests" */;
 			buildPhases = (
 				6F86685B15EF8216ABFD7BF7 /* [CP] Check Pods Manifest.lock */,
-				C3184D3A5C3A71FDA3E0A237 /* [CP] Prepare Artifacts */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				354D9D3B6B677C9378D2E7E6 /* [CP] Embed Pods Frameworks */,
 				F340836079A321C3C1558574 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -229,12 +242,10 @@
 			buildPhases = (
 				61DF5BBB2B0627793ADF35B7 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
-				F70037978D8D6DB9884FED4B /* [CP] Prepare Artifacts */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				A291ED7E10EEC6A3F909AF2A /* [CP] Embed Pods Frameworks */,
 				3F9972B0E3D9DE3871AA3DCE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -346,6 +357,8 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				876F3DC6474A4F3B8835249D /* Roboto Bold.ttf in Resources */,
+				9952C1BEF47E4009A5A25DD4 /* Roboto.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,23 +429,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
-		};
-		354D9D3B6B677C9378D2E7E6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-QuizApp-QuizAppTests/Pods-QuizApp-QuizAppTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/cocoapods-artifacts-${CONFIGURATION}.txt",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuizApp-QuizAppTests/Pods-QuizApp-QuizAppTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		3F9972B0E3D9DE3871AA3DCE /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -518,41 +514,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A291ED7E10EEC6A3F909AF2A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-QuizApp/Pods-QuizApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/cocoapods-artifacts-${CONFIGURATION}.txt",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuizApp/Pods-QuizApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C3184D3A5C3A71FDA3E0A237 /* [CP] Prepare Artifacts */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-QuizApp-QuizAppTests/Pods-QuizApp-QuizAppTests-artifacts.sh",
-				"${PODS_ROOT}/OpenSSL-Universal/Frameworks/OpenSSL.xcframework",
-			);
-			name = "[CP] Prepare Artifacts";
-			outputPaths = (
-				"${BUILT_PRODUCTS_DIR}/cocoapods-artifacts-${CONFIGURATION}.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuizApp-QuizAppTests/Pods-QuizApp-QuizAppTests-artifacts.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F340836079A321C3C1558574 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -569,24 +530,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuizApp-QuizAppTests/Pods-QuizApp-QuizAppTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F70037978D8D6DB9884FED4B /* [CP] Prepare Artifacts */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-QuizApp/Pods-QuizApp-artifacts.sh",
-				"${PODS_ROOT}/OpenSSL-Universal/Frameworks/OpenSSL.xcframework",
-			);
-			name = "[CP] Prepare Artifacts";
-			outputPaths = (
-				"${BUILT_PRODUCTS_DIR}/cocoapods-artifacts-${CONFIGURATION}.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuizApp/Pods-QuizApp-artifacts.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {

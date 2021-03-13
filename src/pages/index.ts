@@ -7,3 +7,7 @@ export const ScreenNames = {
     QUESTION_SCREEN: "QUESTION_SCREEN",
     RESULT_SCREEN: "RESULT_SCREEN",
 }
+
+export type RootStackParamList = {
+    QUESTION_SCREEN: { name: string, id: number };
+};

@@ -1,16 +1,16 @@
 import {API_URL} from "@env"
 
 export class QuestionAPIURLBuilder {
-    private url: string
+    private query: string
 
     constructor() {
-        this.url = API_URL
+        this.query = ""
     }
 
     setAmount(amount: number) {
         if(amount) {
             this.addConnector()
-            this.url += `amount=${amount}`
+            this.query += `amount=${amount}`
         }
         return this
     }
@@ -18,7 +18,7 @@ export class QuestionAPIURLBuilder {
     setCategory(category: number) {
         if(category) {
             this.addConnector()
-            this.url += `category=${category}`
+            this.query += `category=${category}`
         }
         return this
     }
@@ -26,7 +26,7 @@ export class QuestionAPIURLBuilder {
     setDifficulty(difficulty: string) {
         if(difficulty) {
             this.addConnector()
-            this.url += `difficulty=${difficulty}`
+            this.query += `difficulty=${difficulty}`
         }
         return this
     }
@@ -34,7 +34,7 @@ export class QuestionAPIURLBuilder {
     setType(type: string) {
         if(type) {
             this.addConnector()
-            this.url += `type=${type}`
+            this.query += `type=${type}`
         }
         return this
     }
@@ -42,16 +42,16 @@ export class QuestionAPIURLBuilder {
     setToken(token: string) {
         if(token) {
             this.addConnector()
-            this.url += `category=${token}`
+            this.query += `token=${token}`
         }
         return this
     }
 
     private addConnector() {
-        if(this.url.length > 0) this.url += "&"
+        if(this.query.length > 0) this.query += "&"
     }
     
     build() {
-        return this.url
+        return `${API_URL}${this.query}`
     }
 }
