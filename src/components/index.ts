@@ -1,5 +1,6 @@
 export * from './AnswerSelector'
-export * from './CategoryButton'
+export * from './BottomSheet'
+export * from './Button'
 export * from './DifficultBadge'
 export * from './LayoutContainer'
 export * from './PageContainer'

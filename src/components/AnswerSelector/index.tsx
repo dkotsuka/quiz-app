@@ -24,5 +24,5 @@ const Container = styled.TouchableOpacity`
     shadow-color: #000000;
     shadow-opacity: 0.4;
     shadow-radius: 3px;
-    elevation: 1;
+    elevation: 3;
 `

@@ -3,20 +3,21 @@ import React, { useContext, useEffect, useState } from 'react'
 import { SafeAreaView } from 'react-native'
 import { SessionContext } from '../../providers/SessionProvider'
 import { Question, questionService } from '../../services/QuestionService'
-import { StackNavigationProp } from '@react-navigation/stack';
-import { Typography } from '../../components/Typography'
-import { PageContainer } from '../../components/PageContainer'
-import { Separator } from '../../components/Separator'
-import { DifficultBadge } from '../../components/DifficultBadge'
-import { LayoutContainer } from '../../components/LayoutContainer'
+import { Typography, 
+    PageContainer, 
+    Separator, 
+    DifficultBadge, 
+    LayoutContainer, 
+    AnswerSelector, 
+    BottomSheet,
+    Button} from '../../components'
 import { shuffleArray, decodeHTMLEntities } from '../../utils'
-import { AnswerSelector } from '../../components/AnswerSelector'
+import { AnswerCheckModal } from '../../components/AnswerCheckModal'
 
 type QuestionScreenParams = {
     id: number
     name: string
 }
-
 
 type LastAnswer = "success" | "mistake" | "empty"
 type DifficultLevel = "easy" | "medium" | "hard"
@@ -32,6 +33,11 @@ export const QuestionScreen: React.FC = (props) => {
     const [questionNumber, setQuestionNumber] = useState<number>(1)
     const [answers, setAnwers] = useState<string[]>([])
     const [selectedAnswer, setSelectedAnswer] = useState<string>()
+    const [score, setScore] = useState({
+        easy: [0,0],
+        medium: [0,0],
+        hard: [0,0]
+    })
 
     useEffect(() => {
         getQuestion()
@@ -54,8 +60,19 @@ export const QuestionScreen: React.FC = (props) => {
         
     }
 
-    const checkAnswer = (answer: string) => {
-        if(question?.correct_answer == answer) {
+    const updateScore = (answerIsCorrect: boolean) => {
+        setScore({
+            ...score,
+            [difficult]: [
+                answerIsCorrect ? score[difficult][0] + 1 : score[difficult],
+                answerIsCorrect ? score[difficult] : score[difficult][1] + 1
+            ]
+        })
+    }
+
+    const checkAnswer = () => {
+        const answerIsCorrect = question?.correct_answer == selectedAnswer
+        if(answerIsCorrect) {
             lastAnswer == "success" 
             ? setDifficultUp()
             : setLastAnswer("success")
@@ -64,6 +81,8 @@ export const QuestionScreen: React.FC = (props) => {
             ? setDifficultDown()
             : setLastAnswer("mistake")
         }
+        updateScore(answerIsCorrect)
+        setSelectedAnswer(undefined)
         questionNumber < 10 ? getNewQuestion() : goToResults()
     }
 
@@ -84,7 +103,7 @@ export const QuestionScreen: React.FC = (props) => {
             {question && <>
                 <LayoutContainer.Row justifyContent="space-between">
                     <Typography.H2>Question {questionNumber}</Typography.H2>
-                    <DifficultBadge level={"medium"}/>
+                    <DifficultBadge level={difficult}/>
                 </LayoutContainer.Row>
                 <Separator height={27}/>
                 <Typography.Body>{decodeHTMLEntities(question.question)}</Typography.Body>
@@ -99,5 +118,9 @@ export const QuestionScreen: React.FC = (props) => {
             </>}
             <SafeAreaView />
         </PageContainer>
+        <AnswerCheckModal isVisble={true}/>
+        <BottomSheet isVisble={!!selectedAnswer}>
+            <Button.Primary text={questionNumber < 10 ? "Next" : "Results"} onPress={() => checkAnswer()} icon="arrowRight"/>
+        </BottomSheet>
     </>
 }

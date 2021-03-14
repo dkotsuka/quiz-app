@@ -1,12 +1,9 @@
 import {useNavigation} from '@react-navigation/native';
 import React, {useEffect, useState} from 'react';
 import {SafeAreaView} from 'react-native';
-import {Typography} from '../../components/Typography';
-import {PageContainer} from '../../components/PageContainer';
-import {Separator} from '../../components/Separator';
 import {Category, questionService} from '../../services/QuestionService';
-import { CategoryButton, LayoutContainer } from '../../components';
 import { ScreenNames } from '..';
+import { Button, PageContainer, Typography, Separator, LayoutContainer } from '../../components';
 
 export const MainScreen: React.FC = (props) => {
   const [categories, setCategories] = useState<Category[]>([]);
@@ -32,7 +29,7 @@ export const MainScreen: React.FC = (props) => {
         <Separator height={40} />
         {categories.map(({id, name}) => (
           <LayoutContainer.Column key={`${name}${id}`}>
-            <CategoryButton
+            <Button.Secondary
               text={name}
               onPress={() => navigateToCategory({id, name})}
             />
