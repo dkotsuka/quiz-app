@@ -1,8 +1,8 @@
 import React from 'react';
 import {NavigationContainer, DefaultTheme, Theme} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-import { MainScreen } from './src/pages/MainScreen';
-import { QuestionScreen, ResultScreen, ScreenNames } from './src/pages';
+import { MainScreen } from './src/screens/MainScreen';
+import { QuestionScreen, ResultScreen, ScreenNames } from './src/screens';
 import { SessionProvider } from './src/providers/SessionProvider';
 import { StatusBar } from 'react-native';
 

@@ -42,8 +42,6 @@ class QuestionService {
             .setToken(token)
             .build()
 
-            console.log(url)
-
             const {data} = await axios.get(url)
             if(data && data.response_code == 0) {
                 result = data.results

@@ -14,6 +14,7 @@ export const CategoryButton: React.FC<CategoryButton> = (props) => {
 }
 
 const CategoryButtonContainer = styled.TouchableOpacity`
+    width: 100%;
     border-color: #78809A;
     border-width: 1px;
     border-radius: 10px;
