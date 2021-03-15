@@ -7,7 +7,7 @@ interface BottomSheetProps {
 }
 
 export const BottomSheet: React.FC<BottomSheetProps> = ({isVisble, children}) => {
-    const [animValue] = useState(new Animated.Value(0))
+    const [animValue] = useState(new Animated.Value(-150))
 
     useEffect(() => {
         animate()
@@ -15,13 +15,15 @@ export const BottomSheet: React.FC<BottomSheetProps> = ({isVisble, children}) =>
 
     const animate = () => {
         Animated.timing(animValue, {
-            toValue: isVisble ? 1 : 0,
+            toValue: isVisble ? 0 : -150,
             duration: 250,
-            useNativeDriver: true,
-        }).start();
+            useNativeDriver: false,
+        }).start(() => {
+
+        });
     };
     
-    return <BottomSheetContainer style={{ opacity: animValue}}>
+    return <BottomSheetContainer style={{ bottom: animValue}}>
         {children}
         <SafeAreaView />
     </BottomSheetContainer>
