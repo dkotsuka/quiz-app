@@ -10,7 +10,7 @@ interface PrimaryButton {
 }
 
 export const Primary: React.FC<PrimaryButton> = ({text, icon, onPress}) => {
-    return <PrimaryButtonContainer onPress={onPress}>
+    return <PrimaryButtonContainer onPress={onPress} testID="primary-button-touchable">
         <PrimaryButtonText>{text}</PrimaryButtonText>
         {!!icon && <Image source={Icons[icon]} style={{marginLeft: 12}}/>}
     </PrimaryButtonContainer>

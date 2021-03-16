@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AnswerCheckModal Correct AnswerCheckModal matches snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgba(255,255,255,0.6)",
+        "bottom": 0,
+        "justifyContent": "center",
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      },
+    ]
+  }
+>
+  <View
+    isCorrect={true}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "white",
+          "borderColor": "#32CB82",
+          "borderRadius": 8,
+          "borderWidth": 3,
+          "elevation": 3,
+          "marginBottom": 100,
+          "paddingHorizontal": 66,
+          "paddingVertical": 44,
+          "shadowColor": "#000000",
+          "shadowOpacity": 0.4,
+          "shadowRadius": 3,
+        },
+        Object {
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+        },
+      ]
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../assets/icons/correct.png",
+        }
+      }
+    />
+    <View
+      height={14}
+      style={
+        Array [
+          Object {
+            "height": 14,
+          },
+        ]
+      }
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Roboto Bold",
+            "fontSize": 20,
+          },
+        ]
+      }
+    >
+      You're right!
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`AnswerCheckModal Incorrect AnswerCheckModal matches snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgba(255,255,255,0.6)",
+        "bottom": 0,
+        "justifyContent": "center",
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      },
+    ]
+  }
+>
+  <View
+    isCorrect={false}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "white",
+          "borderColor": "#FF4F4F",
+          "borderRadius": 8,
+          "borderWidth": 3,
+          "elevation": 3,
+          "marginBottom": 100,
+          "paddingHorizontal": 66,
+          "paddingVertical": 44,
+          "shadowColor": "#000000",
+          "shadowOpacity": 0.4,
+          "shadowRadius": 3,
+        },
+        Object {
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+        },
+      ]
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../assets/icons/wrong.png",
+        }
+      }
+    />
+    <View
+      height={14}
+      style={
+        Array [
+          Object {
+            "height": 14,
+          },
+        ]
+      }
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Roboto Bold",
+            "fontSize": 20,
+          },
+        ]
+      }
+    >
+      You missed.
+    </Text>
+  </View>
+</View>
+`;

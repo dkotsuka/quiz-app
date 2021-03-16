@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LayoutContainer column container matches snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "flex-start",
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+      },
+    ]
+  }
+>
+  <Text>
+    First component
+  </Text>
+  <Text>
+    Second component
+  </Text>
+</View>
+`;
+
+exports[`LayoutContainer row container matches snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "flex-start",
+        "flexDirection": "row",
+        "justifyContent": "flex-start",
+      },
+    ]
+  }
+>
+  <Text>
+    First component
+  </Text>
+  <Text>
+    Second component
+  </Text>
+</View>
+`;

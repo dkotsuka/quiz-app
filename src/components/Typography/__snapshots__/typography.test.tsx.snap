@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography maches snapshot 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontFamily": "Roboto Bold",
+        "fontSize": 20,
+      },
+    ]
+  }
+>
+  H1 Text
+</Text>
+`;
+
+exports[`Typography maches snapshot 2`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontFamily": "Roboto Bold",
+        "fontSize": 16,
+      },
+    ]
+  }
+>
+  h2 Text
+</Text>
+`;
+
+exports[`Typography maches snapshot 3`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontFamily": "Roboto",
+        "fontSize": 14,
+      },
+    ]
+  }
+>
+  Body Text
+</Text>
+`;
+
+exports[`Typography maches snapshot 4`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontFamily": "Roboto",
+        "fontSize": 12,
+      },
+    ]
+  }
+>
+  Small Text
+</Text>
+`;

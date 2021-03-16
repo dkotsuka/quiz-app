@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Divider horizontal divider matches snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderColor": "#B8BED5",
+        "borderTopWidth": 2,
+        "width": "100%",
+      },
+    ]
+  }
+  vertical={false}
+  width={2}
+/>
+`;
+
+exports[`Divider vertical divider matches snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderColor": "#B8BED5",
+        "borderLeftWidth": 2,
+        "height": "100%",
+      },
+    ]
+  }
+  vertical={true}
+  width={2}
+/>
+`;

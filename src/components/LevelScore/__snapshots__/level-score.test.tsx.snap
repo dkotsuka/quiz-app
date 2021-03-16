@@ -1,0 +1,223 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LevelScore maches snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "flex-start",
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Roboto Bold",
+          "fontSize": 20,
+        },
+        Object {
+          "fontSize": 14,
+        },
+      ]
+    }
+  >
+    Easy
+  </Text>
+  <View
+    height={4}
+    style={
+      Array [
+        Object {
+          "height": 4,
+        },
+      ]
+    }
+  />
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Roboto",
+          "fontSize": 14,
+        },
+        Object {
+          "fontSize": 14,
+        },
+      ]
+    }
+    testID="level-score-text-correct"
+  >
+    Correct: 
+    1
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Roboto",
+          "fontSize": 14,
+        },
+        Object {
+          "fontSize": 14,
+        },
+      ]
+    }
+    testID="level-score-text-wrong"
+  >
+    Wrong: 
+    2
+  </Text>
+</View>
+`;
+
+exports[`LevelScore maches snapshot 2`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "flex-start",
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Roboto Bold",
+          "fontSize": 20,
+        },
+        Object {
+          "fontSize": 14,
+        },
+      ]
+    }
+  >
+    Medium
+  </Text>
+  <View
+    height={4}
+    style={
+      Array [
+        Object {
+          "height": 4,
+        },
+      ]
+    }
+  />
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Roboto",
+          "fontSize": 14,
+        },
+        Object {
+          "fontSize": 14,
+        },
+      ]
+    }
+    testID="level-score-text-correct"
+  >
+    Correct: 
+    3
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Roboto",
+          "fontSize": 14,
+        },
+        Object {
+          "fontSize": 14,
+        },
+      ]
+    }
+    testID="level-score-text-wrong"
+  >
+    Wrong: 
+    4
+  </Text>
+</View>
+`;
+
+exports[`LevelScore maches snapshot 3`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "flex-start",
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Roboto Bold",
+          "fontSize": 20,
+        },
+        Object {
+          "fontSize": 14,
+        },
+      ]
+    }
+  >
+    Hard
+  </Text>
+  <View
+    height={4}
+    style={
+      Array [
+        Object {
+          "height": 4,
+        },
+      ]
+    }
+  />
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Roboto",
+          "fontSize": 14,
+        },
+        Object {
+          "fontSize": 14,
+        },
+      ]
+    }
+    testID="level-score-text-correct"
+  >
+    Correct: 
+    5
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Roboto",
+          "fontSize": 14,
+        },
+        Object {
+          "fontSize": 14,
+        },
+      ]
+    }
+    testID="level-score-text-wrong"
+  >
+    Wrong: 
+    6
+  </Text>
+</View>
+`;

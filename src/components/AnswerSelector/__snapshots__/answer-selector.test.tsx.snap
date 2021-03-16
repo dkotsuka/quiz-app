@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AnswerSelector match snapshot 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#4D8AF0",
+      "borderRadius": 8,
+      "borderWidth": 2,
+      "elevation": 3,
+      "marginBottom": 16,
+      "opacity": 1,
+      "paddingBottom": 17,
+      "paddingLeft": 17,
+      "paddingRight": 17,
+      "paddingTop": 17,
+      "shadowColor": "#000000",
+      "shadowOffset": Object {
+        "height": 2,
+        "width": 0,
+      },
+      "shadowOpacity": 0.4,
+      "shadowRadius": 3,
+    }
+  }
+  testID="answer-selector-touchable"
+>
+  <Text
+    size={14}
+    style={
+      Array [
+        Object {
+          "fontFamily": "Roboto",
+          "fontSize": 14,
+        },
+      ]
+    }
+  >
+    My answer
+  </Text>
+</View>
+`;

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Separator maches snapshot 1`] = `
+<View
+  height={10}
+  style={
+    Array [
+      Object {
+        "height": 10,
+      },
+    ]
+  }
+  width={10}
+/>
+`;

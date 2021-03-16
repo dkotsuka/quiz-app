@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BottomSheet invisible match snapshot 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "white",
+      "bottom": -150,
+      "elevation": 3,
+      "left": 0,
+      "paddingHorizontal": 42,
+      "paddingVertical": 14,
+      "position": "absolute",
+      "right": 0,
+      "shadowColor": "#000000",
+      "shadowOpacity": 0.4,
+      "shadowRadius": 3,
+      "zIndex": 10,
+    }
+  }
+>
+  <Text>
+    My component
+  </Text>
+  <RCTSafeAreaView
+    emulateUnlessSupported={true}
+  />
+</View>
+`;
+
+exports[`BottomSheet visible match snapshot 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "white",
+      "bottom": -150,
+      "elevation": 3,
+      "left": 0,
+      "paddingHorizontal": 42,
+      "paddingVertical": 14,
+      "position": "absolute",
+      "right": 0,
+      "shadowColor": "#000000",
+      "shadowOpacity": 0.4,
+      "shadowRadius": 3,
+      "zIndex": 10,
+    }
+  }
+>
+  <Text>
+    My component
+  </Text>
+  <RCTSafeAreaView
+    emulateUnlessSupported={true}
+  />
+</View>
+`;

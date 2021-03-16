@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LayoutCoPageContainerntainer matches snapshot with horizontal padding 1`] = `
+<RCTScrollView
+  hPadding={10}
+  style={
+    Array [
+      Object {
+        "paddingHorizontal": 10,
+      },
+    ]
+  }
+>
+  <View>
+    <Text>
+      First component
+    </Text>
+    <Text>
+      Second component
+    </Text>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`LayoutCoPageContainerntainer matches snapshot with padding 1`] = `
+<RCTScrollView
+  padding={10}
+  style={
+    Array [
+      Object {
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View>
+    <Text>
+      First component
+    </Text>
+    <Text>
+      Second component
+    </Text>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`LayoutCoPageContainerntainer matches snapshot with vertical padding 1`] = `
+<RCTScrollView
+  style={
+    Array [
+      Object {
+        "paddingVertical": 10,
+      },
+    ]
+  }
+  vPadding={10}
+>
+  <View>
+    <Text>
+      First component
+    </Text>
+    <Text>
+      Second component
+    </Text>
+  </View>
+</RCTScrollView>
+`;

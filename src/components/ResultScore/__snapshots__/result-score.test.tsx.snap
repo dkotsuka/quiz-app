@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResultScore maches snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "flex-start",
+        "backgroundColor": "#EFEFF2",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "marginHorizontal": 60,
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      },
+    ]
+  }
+>
+  <View
+    alignItems="center"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Roboto Bold",
+            "fontSize": 20,
+          },
+          Object {
+            "fontSize": 28,
+          },
+        ]
+      }
+      testID="result-score-successes-text"
+    >
+      8
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Roboto",
+            "fontSize": 14,
+          },
+          Object {
+            "fontSize": 13,
+          },
+        ]
+      }
+    >
+      Successes
+    </Text>
+  </View>
+  <View
+    alignItems="center"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Roboto Bold",
+            "fontSize": 20,
+          },
+          Object {
+            "fontSize": 28,
+          },
+        ]
+      }
+      testID="result-score-mistakes-text"
+    >
+      10
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Roboto",
+            "fontSize": 14,
+          },
+          Object {
+            "fontSize": 13,
+          },
+        ]
+      }
+    >
+      Mistakes
+    </Text>
+  </View>
+</View>
+`;

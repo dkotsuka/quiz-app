@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Primary match snapshot 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#4D8AF0",
+      "borderRadius": 14,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "opacity": 1,
+      "paddingVertical": 12,
+      "width": "100%",
+    }
+  }
+  testID="primary-button-touchable"
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#FFFFFF",
+          "fontFamily": "Roboto Bold",
+          "fontSize": 20,
+        },
+      ]
+    }
+  >
+    Primary
+  </Text>
+</View>
+`;
+
+exports[`Button Primary with icon match snapshot 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#4D8AF0",
+      "borderRadius": 14,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "opacity": 1,
+      "paddingVertical": 12,
+      "width": "100%",
+    }
+  }
+  testID="primary-button-touchable"
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#FFFFFF",
+          "fontFamily": "Roboto Bold",
+          "fontSize": 20,
+        },
+      ]
+    }
+  >
+    Primary
+  </Text>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../assets/icons/arrow-right.png",
+      }
+    }
+    style={
+      Object {
+        "marginLeft": 12,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`Button Secondary match snapshot 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "borderColor": "#78809A",
+      "borderRadius": 10,
+      "borderWidth": 1,
+      "height": 44,
+      "justifyContent": "center",
+      "opacity": 1,
+      "width": "100%",
+    }
+  }
+  testID="secondary-button-touchable"
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#78809A",
+          "fontFamily": "Roboto Bold",
+          "fontSize": 16,
+        },
+      ]
+    }
+  >
+    Secondary
+  </Text>
+</View>
+`;

@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DifficultBadge easy badge matches snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#d7d8de",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "height": 20,
+        "justifyContent": "flex-start",
+        "paddingHorizontal": 6,
+      },
+    ]
+  }
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../assets/icons/full-star.png",
+      }
+    }
+  />
+  <Image
+    source={
+      Object {
+        "testUri": "../../../assets/icons/empty-star.png",
+      }
+    }
+  />
+  <Image
+    source={
+      Object {
+        "testUri": "../../../assets/icons/empty-star.png",
+      }
+    }
+  />
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Roboto",
+          "fontSize": 12,
+        },
+        Object {
+          "paddingHorizontal": 6,
+        },
+      ]
+    }
+  >
+    Easy
+  </Text>
+</View>
+`;
+
+exports[`DifficultBadge hard badge matches snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#d7d8de",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "height": 20,
+        "justifyContent": "flex-start",
+        "paddingHorizontal": 6,
+      },
+    ]
+  }
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../assets/icons/full-star.png",
+      }
+    }
+  />
+  <Image
+    source={
+      Object {
+        "testUri": "../../../assets/icons/full-star.png",
+      }
+    }
+  />
+  <Image
+    source={
+      Object {
+        "testUri": "../../../assets/icons/full-star.png",
+      }
+    }
+  />
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Roboto",
+          "fontSize": 12,
+        },
+        Object {
+          "paddingHorizontal": 6,
+        },
+      ]
+    }
+  >
+    Hard
+  </Text>
+</View>
+`;
+
+exports[`DifficultBadge medium badge matches snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#d7d8de",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "height": 20,
+        "justifyContent": "flex-start",
+        "paddingHorizontal": 6,
+      },
+    ]
+  }
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../assets/icons/full-star.png",
+      }
+    }
+  />
+  <Image
+    source={
+      Object {
+        "testUri": "../../../assets/icons/full-star.png",
+      }
+    }
+  />
+  <Image
+    source={
+      Object {
+        "testUri": "../../../assets/icons/empty-star.png",
+      }
+    }
+  />
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Roboto",
+          "fontSize": 12,
+        },
+        Object {
+          "paddingHorizontal": 6,
+        },
+      ]
+    }
+  >
+    Medium
+  </Text>
+</View>
+`;
