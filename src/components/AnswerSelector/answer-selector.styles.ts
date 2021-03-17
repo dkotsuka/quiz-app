@@ -5,6 +5,7 @@ export const AnswerSelectorContainer = styled.TouchableOpacity`
     border-radius: 8px;
     border-width: ${({isSelected}: {isSelected: boolean}) => isSelected ? 2 : 0}px;
     padding: ${({isSelected}: {isSelected: boolean}) => isSelected ? 17 : 19}px;
+    margin-horizontal: 2px;
     margin-bottom: 16px;
     background-color: #FFFFFF;
     shadow-color: #000000;

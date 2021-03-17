@@ -19,6 +19,7 @@ exports[`AnswerSelector match snapshot 1`] = `
       "borderWidth": 2,
       "elevation": 3,
       "marginBottom": 16,
+      "marginHorizontal": 2,
       "opacity": 1,
       "paddingBottom": 17,
       "paddingLeft": 17,

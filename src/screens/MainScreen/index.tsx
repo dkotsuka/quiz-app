@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { SafeAreaView, ActivityIndicator } from 'react-native';
+import { SafeAreaView } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { Category, questionService } from '../../services/QuestionService';
-import { ScreenNames } from '..';
-import { Button, PageContainer, Typography, Separator, LayoutContainer, ErrorPlaceHolder } from '../../components';
+import { ScreenNames } from '../index';
+import { Button, PageContainer, Typography, Separator, LayoutContainer, ErrorPlaceHolder, LoadingIndicator } from '../../components';
 
 export const MainScreen: React.FC = (props) => {
   const [categories, setCategories] = useState<Category[]>([]);
@@ -29,10 +29,7 @@ export const MainScreen: React.FC = (props) => {
       <PageContainer padding={24}>
         <Typography.H1>Categories</Typography.H1>
         <Separator height={40} />
-        {loading && <>
-                <Separator height={160}/>
-                <ActivityIndicator size="large" />
-            </>}
+        {loading && <LoadingIndicator />}
         {!!categories.length ? categories.map(({id, name}) => (
           <LayoutContainer.Column key={`${name}${id}`}>
             <Button.Secondary

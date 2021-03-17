@@ -45,7 +45,7 @@ exports[`ResultScore maches snapshot 1`] = `
       }
       testID="result-score-successes-text"
     >
-      8
+      9
     </Text>
     <Text
       style={
@@ -89,7 +89,7 @@ exports[`ResultScore maches snapshot 1`] = `
       }
       testID="result-score-mistakes-text"
     >
-      10
+      12
     </Text>
     <Text
       style={

@@ -1,6 +1,6 @@
 import { Route, useNavigation, useRoute } from '@react-navigation/native'
 import React, { useContext, useEffect, useState } from 'react'
-import { ActivityIndicator, SafeAreaView } from 'react-native'
+import { SafeAreaView } from 'react-native'
 import { SessionContext } from '../../providers/SessionProvider'
 import { Question, questionService } from '../../services/QuestionService'
 import { Typography, 
@@ -11,11 +11,12 @@ import { Typography,
     AnswerSelector, 
     BottomSheet,
     Button,
-    ErrorPlaceHolder} from '../../components'
+    ErrorPlaceHolder,
+    LoadingIndicator} from '../../components'
 import { shuffleArray, decodeHTMLEntities } from '../../utils'
 import { AnswerCheckModal } from '../../components/AnswerCheckModal'
 import { QuestionScreenParams, DifficultLevel, LastAnswer, Score } from './question-screen.types'
-import { ScreenNames } from '..'
+import { ScreenNames } from '../index'
 
 export const QuestionScreen: React.FC = (props) => {
     const MAX_QUESTIONS = 10
@@ -86,7 +87,6 @@ export const QuestionScreen: React.FC = (props) => {
     }
 
     const goToNext = () => {
-        console.log(score)
         showModal(false)
         if(questionNumber < MAX_QUESTIONS) {
             setQuestion(undefined)
@@ -109,10 +109,7 @@ export const QuestionScreen: React.FC = (props) => {
 
     return <>
         <PageContainer vPadding={24} hPadding={16}>
-            {loading && <>
-                <Separator height={160}/>
-                <ActivityIndicator size="large" />
-            </>}
+            {loading && <LoadingIndicator/>}
             {question ? <>
                 <LayoutContainer.Row justifyContent="space-between">
                     <Typography.H2>Question {questionNumber}</Typography.H2>

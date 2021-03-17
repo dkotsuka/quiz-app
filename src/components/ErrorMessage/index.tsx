@@ -1,5 +1,5 @@
 import React from 'react'
-import { Separator, Typography } from '..'
+import { Separator, Typography } from '../index'
 
 export const ErrorPlaceHolder: React.FC = (props) => {
     return <>

@@ -17,7 +17,7 @@ import { HeaderBackgroud,
     HeaderDividerText, 
     ButtonContainer, 
     Header } from './result-screen.styles';
-import { ScreenNames } from '..';
+import { ScreenNames } from '../index';
 
 interface ResultScreenParams {
     title: string
@@ -51,7 +51,7 @@ export const ResultScreen: React.FC = (props) => {
             <HeaderDividerText>Check your performance in the quiz</HeaderDividerText>
         </HeaderDividerTextContainer>
         <PageContainer hPadding={19} vPadding={31}>
-            <ResultScore successes={1} mistakes={0}/>
+            <ResultScore score={score}/>
             <Separator height={34}/>
             <LayoutContainer.Row justifyContent="space-between" >
                 <LevelScore level="easy" score={score}/>

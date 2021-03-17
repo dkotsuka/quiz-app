@@ -1,14 +1,22 @@
 import React from 'react'
+import { DifficultLevel, Score } from '../../screens/QuestionScreen/question-screen.types'
 import { LayoutContainer } from '../LayoutContainer'
 import { Typography } from '../Typography'
 import { ResultScoreContainer } from './result-score.styles'
 
 interface ResultScoreProps {
-    successes: number
-    mistakes: number
+    score: Score
 }
 
-export const ResultScore: React.FC<ResultScoreProps> = ({successes, mistakes}) => {
+export const ResultScore: React.FC<ResultScoreProps> = ({score}) => {
+    const levels: DifficultLevel[] = Object.keys(score) as DifficultLevel[]
+    let successes = 0
+    let mistakes = 0
+    levels.forEach(key => {
+        successes += score[key][0]
+        mistakes += score[key][1]
+    })
+
     return <ResultScoreContainer>
         <LayoutContainer.Column alignItems="center">
             <Typography.H1 style={{fontSize: 28}} testID="result-score-successes-text">{successes}</Typography.H1>
