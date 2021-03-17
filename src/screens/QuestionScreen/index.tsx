@@ -1,6 +1,6 @@
 import { Route, useNavigation, useRoute } from '@react-navigation/native'
 import React, { useContext, useEffect, useState } from 'react'
-import { SafeAreaView } from 'react-native'
+import { ActivityIndicator, SafeAreaView } from 'react-native'
 import { SessionContext } from '../../providers/SessionProvider'
 import { Question, questionService } from '../../services/QuestionService'
 import { Typography, 
@@ -10,7 +10,8 @@ import { Typography,
     LayoutContainer, 
     AnswerSelector, 
     BottomSheet,
-    Button} from '../../components'
+    Button,
+    ErrorPlaceHolder} from '../../components'
 import { shuffleArray, decodeHTMLEntities } from '../../utils'
 import { AnswerCheckModal } from '../../components/AnswerCheckModal'
 import { QuestionScreenParams, DifficultLevel, LastAnswer, Score } from './question-screen.types'
@@ -23,6 +24,7 @@ export const QuestionScreen: React.FC = (props) => {
     const {token} = useContext(SessionContext)
     const navigation = useNavigation()
     
+    const [loading, setLoading] = useState(true)
     const [difficult, setDifficult] = useState<DifficultLevel>("medium")
     const [lastAnswer, setLastAnswer] = useState<LastAnswer>("empty")
     const [question, setQuestion] = useState<Question>()
@@ -37,15 +39,19 @@ export const QuestionScreen: React.FC = (props) => {
     })
 
     useEffect(() => {
-        getQuestion()
         navigation.setOptions({title: params.name, headerLeft: null})
+        getQuestion()
     }, [])
 
     const getQuestion = async () => {
+        setLoading(true)
         const newQuestion = await questionService.getQuestion(params.id, difficult, token)
-        setQuestion(newQuestion)
-        const answers = shuffleArray([newQuestion.correct_answer, ...newQuestion.incorrect_answers])
-        setAnwers(answers)
+        if(newQuestion) {
+            setQuestion(newQuestion)
+            const answers = shuffleArray([newQuestion.correct_answer, ...newQuestion.incorrect_answers])
+            setAnwers(answers)
+        }
+        setLoading(false)
     }
 
     const getNewQuestion = async () => {
@@ -103,7 +109,11 @@ export const QuestionScreen: React.FC = (props) => {
 
     return <>
         <PageContainer vPadding={24} hPadding={16}>
-            {question && <>
+            {loading && <>
+                <Separator height={160}/>
+                <ActivityIndicator size="large" />
+            </>}
+            {question ? <>
                 <LayoutContainer.Row justifyContent="space-between">
                     <Typography.H2>Question {questionNumber}</Typography.H2>
                     <DifficultBadge level={difficult}/>
@@ -118,7 +128,7 @@ export const QuestionScreen: React.FC = (props) => {
                             isSelected={selectedAnswer == answer} 
                             onPress={() => setSelectedAnswer(answer)}/>
                     )}
-            </>}
+            </> : !loading && <ErrorPlaceHolder />}
             <SafeAreaView />
         </PageContainer>
         <AnswerCheckModal isVisble={modalIsVisible} isCorrect={lastAnswer == "correct"}/>

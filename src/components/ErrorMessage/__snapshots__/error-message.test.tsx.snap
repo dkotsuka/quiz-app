@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorPlaceHolder matches snapshot 1`] = `
+Array [
+  <View
+    height={160}
+    style={
+      Array [
+        Object {
+          "height": 160,
+        },
+      ]
+    }
+  />,
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Roboto Bold",
+          "fontSize": 20,
+        },
+        Object {
+          "color": "gray",
+        },
+      ]
+    }
+  >
+    An error has occurred. Please, try again later.
+  </Text>,
+]
+`;

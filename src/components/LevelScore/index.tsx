@@ -1,5 +1,5 @@
 import React from 'react'
-import { LayoutContainer, Typography, Separator } from '..'
+import { LayoutContainer, Typography, Separator } from '../index'
 import { DifficultLevel, Score } from '../../screens/QuestionScreen/question-screen.types'
 import { capitalize } from '../../utils'
 
