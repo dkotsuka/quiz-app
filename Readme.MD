@@ -14,6 +14,7 @@ Ao final os erros e acertos são contabilizados por nível de dificuldade.
 
 ## Sistemas suportados (Versão mínima)
 Android => 4.1 - Jelly Bean (API 16)
+
 iOS => iOS 10
 
 ## Bibliotecas utilizadas
